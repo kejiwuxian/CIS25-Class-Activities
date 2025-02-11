@@ -1,6 +1,6 @@
-# Age Group Classifier
+# 04 Age Group Classifier
 
-This folder contains the source code for CIS25 Age Group Classifier.
+This folder contains the source code for CIS25 class activity 04.
 
 Develop a program to classify a person’s age group:
 - Input the age from the user.

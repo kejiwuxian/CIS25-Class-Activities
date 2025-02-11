@@ -1,6 +1,6 @@
-# Simple Calculator
+# 05 Simple Calculator
 
-This folder contains the source code for CIS25 Simple Calculator.
+This folder contains the source code for CIS25 class activity 05.
 
 Implement a simple calculator that:
 - Asks the user to choose an operation: +, -, *, or /.

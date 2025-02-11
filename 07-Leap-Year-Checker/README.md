@@ -1,6 +1,6 @@
 # Leap Year Checker
 
-This folder contains the source code for CIS25 Leap Year Checker.
+This folder contains the source code for CIS25 class activity 07.
 
 Write a program to determine whether a given year is a leap year.
 
