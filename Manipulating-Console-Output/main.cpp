@@ -35,7 +35,10 @@ int main()
 	cout << left << setw(9) << "ID" << setw(16) << "Name" << "Balance" << endl;
 
 	// Left align is still in effect. Set the width of the ID and Name column to align with the headers.
-	cout << setw(9) << "-----" << setw(16) << "------------" << "----------" << endl;
+	cout << setw(5) << setfill('-') << "" << setw(4) << setfill(' ') << ""
+		<< setw(12) << setfill('-') << "" << setw(4) << setfill(' ') << "" 
+		<< setw(10) << setfill('-') << "" << endl;
+	//cout << setw(9) << "-----" << setw(16) << "------------" << "----------" << endl;
 
 	print_row(id1, name1, balance1);
 	print_row(id2, name2, balance2);

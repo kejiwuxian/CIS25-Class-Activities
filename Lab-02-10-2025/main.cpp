@@ -186,7 +186,8 @@ function putEvenLine()
       }
    }
 }
-function nextLine(){
+function nextLine()
+{
    turnLeft();
    move();
    turnLeft();
