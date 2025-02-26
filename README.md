@@ -2,13 +2,12 @@
 
 This repository contains the source code for CIS25 Class Activities.
 
-CIS25 class activity 01  
-CIS25 class activity 02  
-CIS25 class activity 03  
-Grade Evaluation System  
-Age Group Classifier  
-CIS25 class activity 06  
-Leap Year Checker  
-Simple Calculator  
-CIS25 Manipulating Console Output  
-CIS25 Currency Conversion System  
+01-Swap-Variables  
+02-Casino-Card  
+03-Grade-Evaluation-System  
+04-Age-Group-Classifier  
+05-Simple-Calculator  
+06-Roll-Two-Dice  
+07-Leap-Year-Checker  
+Manipulating-Console-Output  
+Currency-Conversion-System  
