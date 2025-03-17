@@ -36,6 +36,13 @@ int main() {
 		cout << "Ali's grade: " << it->second << endl;
 	cout << endl;
 
+	// Erase elementes
+	student_grades.erase("Boby");
+	// Check if a key exists
+	if (student_grades.count("Alice"))
+		cout << "Alice exists in the map" << endl;
+	cout << endl;
+
 	map<int, vector<string>, greater<int>>leaderboard;
 	leaderboard[90].push_back("Bob");
 	leaderboard[80].push_back("Charlie");
