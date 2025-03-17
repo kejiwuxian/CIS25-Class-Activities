@@ -13,14 +13,14 @@ void update_leaderboard(map<int, vector<string>, greater<int>>& leaderboard, str
 void print_leaderboard(const map<int, vector<string>, greater<int>>& leaderboard);
 
 // ADT Abstract Data Type - custom data type - struct, class
-struct Data	// PascalCase
+struct Date	// PascalCase
 {
 	short release_year = 1980;
 	short release_month = 1;
 	short release_day = 1;
 };
 
-ostream& operator<<(ostream& os, const Data& s) {
+ostream& operator<<(ostream& os, const Date& s) {
 	os << "Data { release_year: " << s.release_year << ", release_month: " << s.release_month << ", release_day: " << s.release_day << " }";
 	return os;
 }
@@ -28,7 +28,7 @@ ostream& operator<<(ostream& os, const Data& s) {
 struct Movie
 {
 	string title = "";
-	Data release_date;
+	Date release_date;
 	bool is_popular = false;
 };
 
