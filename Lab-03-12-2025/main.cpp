@@ -15,13 +15,13 @@ void print_leaderboard(const map<int, vector<string>, greater<int>>& leaderboard
 // ADT Abstract Data Type - custom data type - struct, class
 struct Date	// PascalCase
 {
-	short release_year = 1980;
-	short release_month = 1;
-	short release_day = 1;
+	short year = 1980;
+	short month = 1;
+	short day = 1;
 };
 
 ostream& operator<<(ostream& os, const Date& s) {
-	os << "Data { release_year: " << s.release_year << ", release_month: " << s.release_month << ", release_day: " << s.release_day << " }";
+	os << "Data { release_year: " << s.year << ", release_month: " << s.month << ", release_day: " << s.day << " }";
 	return os;
 }
 

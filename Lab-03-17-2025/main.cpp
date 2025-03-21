@@ -5,23 +5,23 @@ using namespace std;
 // ADT Abstract Data Type - custom data type - struct, class
 struct Date	// PascalCase
 {
-	short release_year = 1980;
-	short release_month = 1;
-	short release_day = 1;
+	short year = 1980;
+	short month = 1;
+	short day = 1;
 	bool operator!=(const Date& date) const;
 };
 
 ostream& operator<<(ostream& os, const Date& s)
 {
-	os << "Data { release_year: " << s.release_year << ", release_month: " << s.release_month << ", release_day: " << s.release_day << " }";
+	os << "Data { release_year: " << s.year << ", release_month: " << s.month << ", release_day: " << s.day << " }";
 	return os;
 }
 
 bool operator==(const Date& date1, const Date& date2)
 {
-	return date1.release_year == date2.release_year &&
-		date1.release_month == date2.release_month &&
-		date1.release_day == date2.release_day;
+	return date1.year == date2.year &&
+		date1.month == date2.month &&
+		date1.day == date2.day;
 }
 
 bool Date::operator!=(const Date& date) const
@@ -43,27 +43,27 @@ struct Movie
 bool Movie::equals(const Movie& movie) const
 {
 	return title == movie.title &&
-		release_date.release_year == movie.release_date.release_year &&
-		release_date.release_month == movie.release_date.release_month &&
-		release_date.release_day == movie.release_date.release_day &&
+		release_date.year == movie.release_date.year &&
+		release_date.month == movie.release_date.month &&
+		release_date.day == movie.release_date.day &&
 		is_popular == movie.is_popular;
 }
 
 void Movie::print(const Movie& movie)
 {
 	cout << "Movie { title: " << movie.title
-		<< ", release_date:  { release_year: " << movie.release_date.release_year
-		<< ", release_month: " << movie.release_date.release_month
-		<< ", release_day: " << movie.release_date.release_day
+		<< ", release_date:  { release_year: " << movie.release_date.year
+		<< ", release_month: " << movie.release_date.month
+		<< ", release_day: " << movie.release_date.day
 		<< " }, is_popular: " << movie.is_popular << " }" << endl;
 }
 
 void Movie::print() const
 {
 	cout << "Movie { title: " << title 
-		<< ", release_date:  { release_year: " << release_date.release_year
-		<< ", release_month: " << release_date.release_month
-		<< ", release_day: " << release_date.release_day
+		<< ", release_date:  { release_year: " << release_date.year
+		<< ", release_month: " << release_date.month
+		<< ", release_day: " << release_date.day
 		<< " }, is_popular: " << is_popular << " }" << endl;
 }
 
@@ -129,8 +129,8 @@ int main()
 bool compare_movie(const Movie& movie1, const Movie& movie2)
 {
 	return movie1.title == movie2.title &&
-		movie1.release_date.release_year == movie2.release_date.release_year &&
-		movie1.release_date.release_month == movie2.release_date.release_month &&
-		movie1.release_date.release_day == movie2.release_date.release_day &&
+		movie1.release_date.year == movie2.release_date.year &&
+		movie1.release_date.month == movie2.release_date.month &&
+		movie1.release_date.day == movie2.release_date.day &&
 		movie1.is_popular == movie2.is_popular;
 }
